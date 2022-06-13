@@ -1,0 +1,56 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent-color: #E4C1AE;
+  --accent-color-dark: #C18869;
+  --text-color-light: #FFFFFF;
+  --text-color-dark: #121212;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero-section {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color-dark);
+  max-width: 1440px;
+}
+
+.hero-section__content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-section__title {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.hero-section__description {
+  line-height: 1.5rem;
+}
+
+.hero-section__button {
+  cursor: pointer;
+
+  font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--text-color-light);
+
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+
+  transition: .3s;
+}
+
+.hero-section__button:active {
+  background-color: var(--accent-color-dark);
+
+  transform: scale(.8);
+}
