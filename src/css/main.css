@@ -27,7 +27,7 @@ img {
 
 .hero-section__title {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .hero-section__description {
@@ -42,7 +42,7 @@ img {
   color: var(--text-color-light);
 
   border: none;
-  margin: 1rem 0;
+  margin: 2rem 0;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
 
@@ -53,4 +53,17 @@ img {
   background-color: var(--accent-color-dark);
 
   transform: scale(.8);
+}
+
+@media (min-width: 783px) {
+  .hero-section {
+    display: flex;
+    gap: 4rem;
+
+    margin: 4rem;
+  }
+
+  .hero-section__content {
+    width: 100%;
+  }
 }
