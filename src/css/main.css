@@ -82,10 +82,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: .3s;
 }
 
 .modal__content {
   cursor: auto;
+  /* pointer-events: none; */
+
   background-color: var(--light-color);
   padding: 3rem;
   width: 70%;
@@ -102,6 +106,7 @@ img {
 
 .modal__exit {
   cursor: pointer;
+  pointer-events: all;
 
   font-size: 2rem;
 
