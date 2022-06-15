@@ -1,3 +1,4 @@
+/* General */
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -8,15 +9,19 @@
   --accent-color-dark: #C18869;
   --light-color: #FFFFFF;
   --dark-color: #121212;
-  --medium-color: rgb(177, 177, 177);
+  --medium-color: #B1B1B1;
+
+  --main-font: 'Roboto', sans-serif;
+  --font-bold: 700;
 }
 
 img {
   max-width: 100%;
 }
 
+/* Hero Section */
 .hero-section {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   color: var(--dark-color);
   max-width: 1440px;
 }
@@ -38,7 +43,7 @@ img {
 .hero-section__button {
   cursor: pointer;
 
-  font-weight: 700;
+  font-weight: var(--font-bold);
   background-color: var(--accent-color);
   color: var(--light-color);
 
@@ -56,6 +61,7 @@ img {
   transform: scale(.8);
 }
 
+/* Desktop View */
 @media (min-width: 783px) {
   .hero-section {
     display: flex;
@@ -69,8 +75,11 @@ img {
   }
 }
 
+/* Modal */
+/* acts as a modal's background */
 .modal {
   cursor: pointer;
+  
   background-color: rgba(0, 0, 0, .5);
 
   position: fixed;
@@ -83,7 +92,6 @@ img {
   justify-content: center;
   align-items: center;
 
-  
   animation: fade-in .5s;
 }
 
@@ -91,9 +99,9 @@ img {
   cursor: auto;
 
   background-color: var(--light-color);
+  
   padding: 3rem;
   width: 70%;
-
   position: relative;
 }
 
@@ -101,7 +109,6 @@ img {
   margin: 2rem 0;
   margin-top: 0;
   font-size: 2rem;
-  
 }
 
 .modal__exit {
@@ -116,14 +123,14 @@ img {
 }
 
 .modal__counter {
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .modal__button {
   cursor: pointer;
 
-  font-family: Roboto, 'sans-serif';
-  font-weight: 700;
+  font-family: var(--main-font);
+  font-weight: var(--font-bold);
   background-color: var(--light-color);
   border: 2px solid var(--dark-color);
 
@@ -135,6 +142,7 @@ img {
   background-color: var(--medium-color);
 }
 
+/* Utility */
 .disabled {
   display: none;
 }
